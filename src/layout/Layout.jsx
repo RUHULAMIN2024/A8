@@ -1,5 +1,4 @@
 import { Outlet } from "react-router-dom";
-import Footer from "../shared/Footer";
 import Nav from "../shared/Nav";
 
 const Common = () => {
@@ -7,7 +6,7 @@ const Common = () => {
         <div>
             <Nav></Nav>
             <Outlet></Outlet>
-            <Footer></Footer>
+            
         </div>
     );
 };

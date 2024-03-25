@@ -4,7 +4,7 @@ const Nav = () => {
 
 
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar my-3 bg-base-100">
           <div className="navbar-start">
             <div className="dropdown">
               <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -18,7 +18,7 @@ const Nav = () => {
               <NavLink to="/about-us" className={({isActive})=>isActive?'text-green-500 border-green-500 border p-2 rounded-xl font-bold':'font-bold p-2'}>About Us</NavLink>
               </ul>
             </div>
-            <a className="btn btn-ghost text-xl md:text-2xl">Book Vibe</a>
+            <a className="btn btn-ghost font-black text-xl md:text-2xl">Book Vibe</a>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu space-x-3 menu-horizontal px-1">
@@ -32,8 +32,8 @@ const Nav = () => {
             </ul>
           </div>
           <div className="navbar-end">
-            <a className="btn bg-green-500">Sign In</a>
-            <a className="btn ml-3 bg-blue-500">Sign Up</a>
+            <a className="btn text-white bg-green-500 hover:text-green-500">Sign In</a>
+            <a className="btn text-white hover:text-blue-500 ml-3 bg-blue-500">Sign Up</a>
           </div>
         </div>
     );
