@@ -1,5 +1,5 @@
 
-const Blogs = () => {
+const PageToRead = () => {
     return (
         <div>
             
@@ -7,4 +7,4 @@ const Blogs = () => {
     );
 };
 
-export default Blogs;
+export default PageToRead;

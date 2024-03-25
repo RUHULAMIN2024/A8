@@ -1,5 +1,5 @@
 
-const Bookmarks = () => {
+const AboutUs = () => {
     return (
         <div>
             
@@ -7,4 +7,4 @@ const Bookmarks = () => {
     );
 };
 
-export default Bookmarks;
+export default AboutUs;
