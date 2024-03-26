@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "../layout/Layout";
 import AboutUs from "../pages/AboutUs";
+import Details from "../pages/Details";
 import ErrorPage from "../pages/ErrorPage";
 import Home from "../pages/Home";
 import ListedBooks from "../pages/ListedBooks";
@@ -17,6 +18,11 @@ const Router = createBrowserRouter([
           path:"/",
           element: <Home></Home>,
           loader: ()=> fetch('/fakeData.json')
+        },
+        {
+          path:"/:id",
+          element:<Details></Details>,
+          loader: ()=> fetch('/fakeData.json'),
         },
         {
           path:"/listed-books",
