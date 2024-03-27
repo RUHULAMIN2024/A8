@@ -10,7 +10,7 @@ const ListedBooks = () => {
             <h2 className="text-5xl font-bold text-center bg-base-200 py-8 rounded-xl">Books</h2>
             <div className="text-center my-5">
             <select className="select text-2xl text-white bg-green-500 select-success border-none  ">
-                <option disabled selected>Sort By</option>
+                <option disabled defaultValue>Sort By</option>
                 <option>Rating</option>
                 <option>Number of pages</option>
                 <option>Published year</option>
