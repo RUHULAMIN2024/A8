@@ -16,9 +16,9 @@ const saveReadItem=book=>{
     if(!isExist){
         readItem.push(book);
         localStorage.setItem('read_item',JSON.stringify(readItem));
-        toast.success("Aded Successfuly!");
+        toast.success("Book aded to read list!");
     }
-    else{toast.error("Aded Successfuly!");};
+    else{toast.error("You have alredy read!");};
 }
 
 const getWishlist=()=>{
@@ -35,11 +35,11 @@ const saveWishlist=book=>{
     const isExist=wishlist.find(i=>i.bookId===book.bookId);
     const isExist1=readItem.find(i=>i.bookId===book.bookId);
     if(isExist || isExist1){
-        toast.error("Aded Successfuly!");
+        toast.error("You have alredy read!");
     }else{
     wishlist.push(book);
         localStorage.setItem('wishlist',JSON.stringify(wishlist));
-        toast.success("Aded Successfuly!");
+        toast.success("Book aded to wishlist!");
     };
 }
 

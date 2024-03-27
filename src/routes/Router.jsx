@@ -1,4 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
+import ReadList from "../components/ReadList";
+import Wishlist from "../components/Wishlist";
 import Layout from "../layout/Layout";
 import AboutUs from "../pages/AboutUs";
 import Details from "../pages/Details";
@@ -27,6 +29,16 @@ const Router = createBrowserRouter([
         {
           path:"/listed-books",
           element: <ListedBooks></ListedBooks>,
+          children:[
+            {
+              path:'',
+              element: <ReadList></ReadList>,
+            },
+            {
+              path:'wishlist',
+              element: <Wishlist></Wishlist>,
+            }
+          ]
         },
         {
           path:"/pages-to-read",

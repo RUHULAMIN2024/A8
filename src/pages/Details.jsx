@@ -25,12 +25,12 @@ const Details = () => {
         }
         console.log(book)
     return (
-        <section className="dark:bg-gray-100 dark:text-gray-800">
+        <section>
             <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
                 <div className="flex rounded-xl bg-base-200 items-center justify-center p-10">
                     <img src={image} alt="" className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
                 </div>
-                <article className="max-w-xl px-6 mx-auto space-y-16 dark:bg-gray-100 dark:text-gray-900">
+                <article className="max-w-xl px-6 mx-auto space-y-16">
                     <div className="w-full mx-auto space-y-4">
                         <h1 className="text-5xl font-bold leading-none">{bookName}</h1>
                         <p className="text-sm dark:text-gray-600">By: {author}
