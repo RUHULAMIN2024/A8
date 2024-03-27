@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Hero = () => {
     return (
         <section className="bg-base-200 rounded-3xl">
-			<div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+			<div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row ">
 				<div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-xl xl:max-w-xl lg:text-left">
 					<h1 className="text-5xl font-bold leading-none sm:text-6xl">Books to freshen up your bookshelf
 					</h1>

@@ -18,7 +18,7 @@ const Nav = () => {
               <NavLink to="/about-us" className={({isActive})=>isActive?'text-green-500 border-green-500 border p-2 rounded-xl font-bold':'font-bold p-2'}>About Us</NavLink>
               </ul>
             </div>
-            <a className="btn btn-ghost font-black text-xl md:text-2xl">Book Vibe</a>
+            <a className="btn btn-ghost font-black text-green-500 text-2xl md:text-2xl">Book Vibe</a>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu space-x-3 menu-horizontal px-1">
