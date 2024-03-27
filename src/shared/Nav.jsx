@@ -4,7 +4,7 @@ const Nav = () => {
 
 
     return (
-        <div className="navbar my-3 bg-base-100">
+        <div className="navbar sticky top-0 my-3 bg-base-100">
           <div className="navbar-start">
             <div className="dropdown">
               <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -31,7 +31,7 @@ const Nav = () => {
             
             </ul>
           </div>
-          <div className="navbar-end">
+          <div className="hidden md:flex navbar-end">
             <a className="btn text-white bg-green-500 mr-3 hover:text-green-500">Sign In</a>
             <a className="btn text-white hover:text-blue-500 bg-blue-500">Sign Up</a>
           </div>

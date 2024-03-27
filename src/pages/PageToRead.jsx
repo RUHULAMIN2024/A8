@@ -28,9 +28,9 @@ const PageToRead = () => {
     return (
         
     <BarChart
-    className='my-10 mx-auto'
-      width={1100}
-      height={500}
+    className='my-10 w-[80%] mx-auto'
+      width={1000}
+      height={300}
       data={readItems}
       margin={{
         top: 20,

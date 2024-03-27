@@ -4,8 +4,8 @@ const AboutUs = () => {
         <div>
       
       <h1 className="text-4xl text-center my-10 font-bold">About Book Vibe</h1>
-      <div className="max-w-2xl text-justify mx-auto">
-      <p className="text-xl font-bold">Welcome to Book Vibe!</p>
+      <div className="max-w-3xl p-5 text-justify mx-auto">
+      <p className="text-xl mb-3 font-bold">Welcome to Book Vibe!</p>
       
       <p>At Book Vibe, we believe in the transformative power of books. Our mission is to create a vibrant community of readers who share their passion for literature, exchange ideas, and discover new literary gems.</p>
       
