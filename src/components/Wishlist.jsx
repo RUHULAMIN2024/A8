@@ -12,8 +12,35 @@ const Wishlist = () => {
         setReadItem(storedList);
     },[]);
 
+    const handleSelect=(e)=>{
+        let item=[...readItems]
+        if(e.target.value==='rating'){
+            item.sort((a,b)=>{
+                return b.rating-a.rating
+             });
+        }else if(e.target.value==='numberOfPages'){
+            item.sort((a,b)=>{
+                return b.totalPages-a.totalPages
+             });
+        }else if(e.target.value==='publishedYear'){
+            item.sort((a,b)=>{
+                return b.yearOfPublishing-a.yearOfPublishing
+             });            
+        }
+        setReadItem(item);
+    }
+
     return (
         <div>
+            <div className="text-center my-5">
+            <select onChange={handleSelect} className="select text-2xl text-white bg-green-500 select-success border-none  ">
+                <option defaultValue>Sort By</option>
+                <option value={'rating'}>Rating</option>
+                <option value={'numberOfPages'}>Number of pages</option>
+                <option value={'publishedYear'}>Published year</option>
+                
+            </select>
+            </div>
             {
             readItems.map(item=>(
                 <section key={item.bookId}>

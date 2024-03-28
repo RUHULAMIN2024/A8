@@ -15,24 +15,24 @@ const ReadList = () => {
     },[]);
 
 
-    readItems.sort((a,b)=>{
-        return b.rating-a.rating
-        
-     })
+    
 
     const handleSelect=(e)=>{
-        
+        let item=[...readItems]
         if(e.target.value==='rating'){
-            
-             console.log('rating');
+            item.sort((a,b)=>{
+                return b.rating-a.rating
+             });
         }else if(e.target.value==='numberOfPages'){
-            console.log('numberOfPages');
-
+            item.sort((a,b)=>{
+                return b.totalPages-a.totalPages
+             });
         }else if(e.target.value==='publishedYear'){
-            console.log('publishedYear');
-            
+            item.sort((a,b)=>{
+                return b.yearOfPublishing-a.yearOfPublishing
+             });            
         }
-        
+        setReadItem(item);
     }
 
 
