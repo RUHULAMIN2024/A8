@@ -6,7 +6,8 @@ const Details = () => {
     const books=useLoaderData();
     const {id}=useParams();
     const book=books.find(book=>book.bookId===parseInt(id));
-    const {image,
+    const {
+        image,
         bookName,
         author,
         category,

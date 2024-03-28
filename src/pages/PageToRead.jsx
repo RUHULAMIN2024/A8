@@ -27,11 +27,8 @@ const PageToRead = () => {
   }, []);
   return (
     
-    <ResponsiveContainer width="100%" height="100%">
+    <ResponsiveContainer width='95%' height={500} axpect={3}>
       <BarChart
-        className='my-10 mx-auto'
-        width={500}
-        height={300}
         data={readItems}
         margin={{
           top: 20,
