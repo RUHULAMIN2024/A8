@@ -10,6 +10,7 @@ const Upcoming = () => {
                 <div className="flex text-green-500 space-x-5">
                    <span>#tag</span>
                    <span>#tag</span>
+                   <span>#tag</span>
                 </div>
                 <h2 className="card-title text-2xl">bookName</h2>
                 <p>By: author</p>

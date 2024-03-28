@@ -14,17 +14,48 @@ const ReadList = () => {
         setReadItem(storedList);
     },[]);
 
+
+    readItems.sort((a,b)=>{
+        return b.rating-a.rating
+        
+     })
+
+    const handleSelect=(e)=>{
+        
+        if(e.target.value==='rating'){
+            
+             console.log('rating');
+        }else if(e.target.value==='numberOfPages'){
+            console.log('numberOfPages');
+
+        }else if(e.target.value==='publishedYear'){
+            console.log('publishedYear');
+            
+        }
+        
+    }
+
+
     
     return (
         <div>
+            <div className="text-center my-5">
+            <select onChange={handleSelect} className="select text-2xl text-white bg-green-500 select-success border-none  ">
+                <option defaultValue>Sort By</option>
+                <option value={'rating'}>Rating</option>
+                <option value={'numberOfPages'}>Number of pages</option>
+                <option value={'publishedYear'}>Published year</option>
+                
+            </select>
+            </div>
             {
             readItems.map(item=>(
                 <section key={item.bookId}>
             <div className="container gap-16 mt-10 rounded-2xl bg-base-100 flex flex-col border shadow-xl justify-center p-6 mx-auto sm:py-12 lg:flex-row">
-                <div className="flex rounded-xl bg-base-200 justify-center p-12">
+                <div className="flex rounded-xl bg-base-200 justify-center p-10">
                     <img src={item.image} alt="" className="object-contain" />
                 </div>
-                <article className="max-w-2xl px-3 space-y-16">
+                <article className="max-w-2xl md:px-3 space-y-16">
                     <div className="space-y-4">
                         <h1 className="text-4xl font-bold leading-none">{item.bookName}</h1>
                         <p className="text-sm dark:text-gray-600">By: {item.author}
@@ -35,7 +66,7 @@ const ReadList = () => {
                         {
                             item.tags.map((tag,i)=><span key={i}>#{tag}</span>)
                         }
-                        <p className="flex space-x-2 text-black"><span><IoLocation /></span><span>Year of Publishing: {item.yearOfPublishing}</span></p>
+                        <p className="flex flex-col md:flex-row space-x-2 text-black"><span><IoLocation /></span><span>Year of Publishing: {item.yearOfPublishing}</span></p>
                         </div>
                         <div className="flex flex-col md:flex-row gap-10 border-b pb-5">
                             <p className="flex items-center space-x-2"><span><FaUserFriends /></span> <span> Publisher: {item.publisher}</span></p>

@@ -32,7 +32,7 @@ const Details = () => {
                 </div>
                 <article className="max-w-xl px-6 mx-auto space-y-16">
                     <div className="w-full mx-auto space-y-4">
-                        <h1 className="text-5xl font-bold leading-none">{bookName}</h1>
+                        <h1 className="text-4xl font-bold leading-none">{bookName}</h1>
                         <p className="text-sm dark:text-gray-600">By: {author}
                         </p>
 
